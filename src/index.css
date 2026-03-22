@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cyberpunk OS palette — Cyan / Green / Magenta */
+    --background: 170 30% 4%;
+    --foreground: 180 10% 90%;
+
+    --card: 170 20% 8%;
+    --card-foreground: 180 10% 90%;
+
+    --popover: 170 22% 6%;
+    --popover-foreground: 180 10% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 170 30% 4%;
+
+    --secondary: 170 15% 14%;
+    --secondary-foreground: 180 10% 85%;
+
+    --muted: 170 12% 12%;
+    --muted-foreground: 170 8% 50%;
+
+    --accent: 157 100% 50%;
+    --accent-foreground: 170 30% 4%;
+
+    --highlight: 320 100% 60%;
+    --highlight-foreground: 0 0% 100%;
+
+    --museum-project: 31 95% 52%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 170 15% 16%;
+    --input: 170 15% 16%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Window chrome */
+    --window-bg: 170 18% 7%;
+    --window-header: 170 20% 10%;
+    --window-border: 180 40% 25%;
+    --window-glow: 180 100% 50%;
+
+    /* Taskbar */
+    --taskbar-bg: 170 28% 3%;
+    --taskbar-border: 170 15% 14%;
+
+    /* Desktop */
+    --desktop-icon: 180 10% 88%;
+
+    --sidebar-background: 170 30% 4%;
+    --sidebar-foreground: 180 10% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 170 30% 4%;
+    --sidebar-accent: 170 15% 14%;
+    --sidebar-accent-foreground: 180 10% 85%;
+    --sidebar-border: 170 15% 16%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(170 20% 6%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(180 100% 50% / 0.2);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(180 100% 50% / 0.4);
+  }
+}
+
+@layer utilities {
+  .font-system {
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .font-mono-code {
+    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .window-glow {
+    box-shadow:
+      0 0 20px hsl(180 100% 50% / 0.12),
+      0 0 40px hsl(180 100% 50% / 0.04),
+      0 12px 40px hsl(170 30% 0% / 0.6);
+  }
+
+  .window-glow-hover {
+    box-shadow:
+      0 0 25px hsl(180 100% 50% / 0.2),
+      0 0 50px hsl(180 100% 50% / 0.06),
+      0 16px 48px hsl(170 30% 0% / 0.7);
+  }
+
+  .card-glass {
+    backdrop-filter: blur(12px);
+    background: hsl(170 20% 8% / 0.8);
+    border: 1px solid hsl(180 100% 50% / 0.12);
+  }
+
+  .card-glass:hover {
+    border-color: hsl(180 100% 50% / 0.3);
+    box-shadow: 0 0 20px hsl(180 100% 50% / 0.08);
+    transform: scale(1.02);
+  }
+
+  .taskbar-glass {
+    backdrop-filter: blur(24px);
+    background: hsl(170 28% 3% / 0.92);
+    border-top: 1px solid hsl(180 100% 50% / 0.15);
+  }
+
+  .start-menu-glass {
+    backdrop-filter: blur(28px);
+    background: hsl(170 22% 6% / 0.96);
+    border: 1px solid hsl(180 100% 50% / 0.12);
+  }
+
+  .icon-glow {
+    filter: drop-shadow(0 0 6px hsl(180 100% 50% / 0.5));
+  }
+
+  .neon-underline {
+    position: relative;
+  }
+  .neon-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(180 100% 50%), hsl(157 100% 50%));
+    border-radius: 1px;
+    box-shadow: 0 0 8px hsl(180 100% 50% / 0.4);
+  }
+
+  .glow-text-primary {
+    text-shadow: 0 0 12px hsl(180 100% 50% / 0.4);
+  }
+
+  .glow-text-accent {
+    text-shadow: 0 0 12px hsl(157 100% 50% / 0.4);
+  }
+
+  .glow-text-highlight {
+    text-shadow: 0 0 12px hsl(320 100% 60% / 0.4);
+  }
+
+  .scanline::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 0% / 0.03) 2px,
+      hsl(0 0% 0% / 0.03) 4px
+    );
+    pointer-events: none;
+  }
+
+  .glass-panel {
+    backdrop-filter: blur(10px);
+    background: hsl(170 20% 8% / 0.7);
+    border: 1px solid hsl(180 100% 50% / 0.1);
+  }
+
+  .btn-glow {
+    transition: all 0.2s ease;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 16px hsl(180 100% 50% / 0.3);
+    transform: translateY(-1px);
+  }
+
+  .highlight-glow {
+    box-shadow: 0 0 12px hsl(320 100% 60% / 0.2);
+  }
+}
