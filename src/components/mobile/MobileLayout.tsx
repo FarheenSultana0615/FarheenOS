@@ -61,7 +61,7 @@ const MobileLayout = () => {
   }, [activeApp]);
 
   return (
-    <div className="fixed inset-0 flex flex-col bg-background">
+    <div className="fixed inset-0 z-[50] flex flex-col bg-background">
       {/* Status bar */}
       {!immersive && (
         <div className="flex items-center justify-between border-b border-border/40 bg-card/80 backdrop-blur-md px-4 py-2 pt-[max(env(safe-area-inset-top),0.5rem)]">

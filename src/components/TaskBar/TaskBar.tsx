@@ -1,8 +1,8 @@
 import { Monitor, Github, Linkedin, FileDown, UserCheck, Volume2, VolumeX } from 'lucide-react';
 import { useWindowStore } from '@/store/WindowStore';
 import { useSoundStore } from '@/store/SoundStore';
-import Clock from '@/components/TaskBar/Clock';
-import StartMenu from '@/components/TaskBar/StartMenu';
+import Clock from './Clock';
+import StartMenu from './StartMenu';
 import { Switch } from '@/components/Ui/switch';
 
 const Taskbar = () => {
