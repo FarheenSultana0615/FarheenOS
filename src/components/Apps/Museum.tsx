@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Html, OrbitControls, Sparkles } from '@react-three/drei';
 import * as THREE from 'three';
 import { milestones, type Milestone } from '@/data/MileStone';
