@@ -117,8 +117,8 @@ FarheenOS/
 
 ## ✦ About the Builder
 
-**Farheen Sultana** — Software Engineer & Data Modeler  
-Currently building production software at Hiffai Tech Solutions while completing a BCA at Osmania University (CGPA 8.5/10).
+**Farheen Sultana** — Analytics Engineer  ·  Data Modeler  ·  Data Engineer  
+Currently working at Hiffai Tech Solutions 
 
 FarheenOS was built while *actively learning* Three.js — not after mastering it. Every unfamiliar library in this stack was new when the first commit was made. That's not a disclaimer. That's the point.
 
