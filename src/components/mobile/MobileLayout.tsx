@@ -130,7 +130,7 @@ const MobileLayout = () => {
               {/* Header */}
               <div className="mb-6 text-center">
                 <h1 className="mb-1.5 font-system text-[10px] text-primary glow-text-primary tracking-wider">FARHEEN SULTANA</h1>
-                <p className="text-[11px] text-muted-foreground">Software Engineer & Data Modeler</p>
+                <p className="text-[11px] text-muted-foreground">Analytics Engineer · Data Modeler · Data Engineer</p>
               </div>
 
               {/* App grid */}

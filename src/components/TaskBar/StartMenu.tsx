@@ -37,7 +37,7 @@ const StartMenu = () => {
                   <span className="text-[9px] text-muted-foreground font-mono ml-1.5">v1.0</span>
                 </div>
               </div>
-              <p className="text-[9px] text-muted-foreground mt-1 font-mono ml-8">Software Engineer & Data Modeler</p>
+              <p className="text-[9px] text-muted-foreground mt-1 font-mono ml-8">Analytics Engineer · Data Modeler · Data Engineer</p>
             </div>
 
             {/* Apps */}

@@ -48,14 +48,14 @@ const WelcomeOverlay = () => {
                     FARHEEN SULTANA
                   </h1>
                   <p className="text-sm text-foreground/90 font-medium mb-1">
-                    Software Engineer & Data Modeler
+                    Analytics Engineer · Data Modeler · Data Engineer
                   </p>
                   <p className="text-xs text-muted-foreground mb-1">
-                    Final-year BCA Student · Osmania University
+                    BCA Graduate, Osmania University
                   </p>
                   <div className="flex items-center justify-center gap-1 text-xs text-muted-foreground/60">
                     <MapPin size={10} />
-                    <span>Hyderabad, Telangana</span>
+                    <span>Hyderabad, India</span>
                   </div>
                 </motion.div>
               </div>
@@ -111,9 +111,9 @@ const WelcomeOverlay = () => {
               >
                 <p className="text-[8px] font-system text-highlight/60 mb-2 text-center tracking-wider">HIGHLIGHTS</p>
                 {[
-                  '🏆 Selected for McKinsey Forward Program',
-                  '☁️ AWS ML Engineer Certification (In Progress)',
-                  '🚀 STTM Document Automation Tool — In Production',
+                  '🚀 Auto STTM Engine — production at Hiffai Tech (Snowflake + Databricks)',
+                  '🩺 Shipped Bronze→Silver→Gold healthcare pipeline · 8 dbt models · 31 tests',
+                  '🏆 McKinsey Forward Alumni · Azure AZ-900 Certified',
                 ].map((h, i) => (
                   <p key={i} className="text-[11px] text-muted-foreground text-center leading-relaxed">{h}</p>
                 ))}

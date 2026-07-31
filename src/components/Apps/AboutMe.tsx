@@ -13,7 +13,7 @@ const AboutMe = () => {
         </div>
         <div className="min-w-0">
           <h2 className="text-base sm:text-lg font-bold text-foreground">Farheen Sultana</h2>
-          <p className="text-muted-foreground text-[10px] sm:text-xs font-mono mt-0.5">Software Engineer · Data Modeler · Cloud Enthusiast</p>
+          <p className="text-muted-foreground text-[10px] sm:text-xs font-mono mt-0.5">Analytics Engineer · Data Modeler · Data Engineer</p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mt-2 text-[10px] sm:text-xs text-muted-foreground">
             <span className="flex items-center gap-1"><MapPin size={10} /> Hyderabad, India</span>
             <span className="flex items-center gap-1 truncate"><Mail size={10} /> farheensultana0615@gmail.com</span>
@@ -33,10 +33,11 @@ const AboutMe = () => {
       {/* Bio */}
       <div className="glass-panel rounded-xl p-3 sm:p-4">
         <p className="text-foreground/80 leading-relaxed text-[11px] sm:text-xs">
-          Final-year BCA student with professional experience as a Software Engineer and Data Modeler.
-          Proven track record of delivering beyond requirements — developed a React+TypeScript website with
-          chatbot integration that exceeded client expectations, leading to my current data modeling role.
-          AWS ML Engineer (in progress). Selected for McKinsey Forward Program.
+          I&apos;m an Analytics Engineer and Data Modeler focused on building production-grade
+          data pipelines, governance frameworks, and scalable analytics models. I work with
+          dbt, SQL, Python, Snowflake, Databricks, and Erwin to turn raw data into reliable,
+          well-documented systems for analytics and reporting. Currently at Hiffai Tech Solutions,
+          where I ship enterprise data models and the production Auto STTM Engine.
         </p>
       </div>
 

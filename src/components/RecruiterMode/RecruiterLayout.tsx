@@ -19,7 +19,7 @@ const RecruiterLayout = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
           <div className="min-w-0">
             <h1 className="text-base sm:text-xl font-bold text-foreground truncate">Farheen Sultana</h1>
-            <p className="text-[10px] sm:text-xs text-muted-foreground font-mono truncate">Software Engineer · Data Modeler</p>
+            <p className="text-[10px] sm:text-xs text-muted-foreground font-mono truncate">Analytics Engineer · Data Modeler · Data Engineer</p>
           </div>
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <a href="https://linkedin.com/in/farheen-sultana-54723a254" target="_blank" rel="noopener noreferrer" className="p-1.5 sm:p-2 rounded-lg hover:bg-secondary/60 transition-colors text-muted-foreground hover:text-primary">
@@ -44,10 +44,12 @@ const RecruiterLayout = () => {
             <span className="flex items-center gap-1"><Phone size={12} /> 6281926353</span>
           </div>
           <p className="text-[12px] sm:text-sm text-foreground/80 leading-relaxed max-w-3xl">
-            Final-year BCA student with professional experience as a Software Engineer and Data Modeler.
-            Proven track record of delivering beyond requirements — developed a React+TypeScript website with
-            chatbot integration that exceeded client expectations, leading to my current data modeling role.
-            AWS ML Engineer (in progress). Selected for McKinsey Forward Program.
+            Analytics Engineer and Data Modeler with production experience building end-to-end
+            data pipelines, curated datasets, and automated data quality frameworks. Shipped a
+            Bronze → Silver → Gold healthcare governance pipeline (8 dbt models, 31 automated tests,
+            GitHub Actions CI/CD) on real WHO and NDAP India datasets, and built the production
+            Auto STTM Engine at Hiffai Tech Solutions using live Snowflake and Databricks metadata.
+            Strong foundation in Erwin, Star Schema, Data Vault, medallion architecture, SQL, and Python.
           </p>
         </section>
 

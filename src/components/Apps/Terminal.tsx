@@ -24,17 +24,20 @@ const COMMANDS: Record<string, () => string> = {
   neofetch    — System info`,
 
   about: () =>
-    `╔══════════════════════════════════╗
-║     FARHEEN SULTANA              ║
-╠══════════════════════════════════╣
-║ Software Engineer & Data Modeler ║
-║ Final-year BCA · Osmania Univ.   ║
-║ CGPA: 8.5/10                     ║
-║                                  ║
-║ Currently at Hiffai Tech         ║
-║ McKinsey Forward Program         ║
-║ AWS ML Engineer (In Progress)    ║
-╚══════════════════════════════════╝`,
+    `╔══════════════════════════════════════╗
+║       FARHEEN SULTANA                ║
+╠══════════════════════════════════════╣
+║ Analytics Engineer · Data Modeler    ║
+║ BCA · Osmania University · CGPA 8.5  ║
+║                                      ║
+║ @ Hiffai Tech Solutions              ║
+║   → Enterprise Erwin data models     ║
+║   → Auto STTM Engine (Snowflake +    ║
+║     Databricks) in production        ║
+║                                      ║
+║ McKinsey Forward Alumni              ║
+║ Microsoft Azure AZ-900 Certified     ║
+╚══════════════════════════════════════╝`,
 
   skills: () => {
     const bars = skills.map((s) => {

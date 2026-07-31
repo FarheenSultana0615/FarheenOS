@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Lightbulb, X } from 'lucide-react';
 
 const highlights = [
-  "🚀 Building STTM Document Automation Tool — now in production!",
-  "📚 Preparing for AWS ML Engineer certification (Target: Aug 2026)",
-  "🏆 Selected for McKinsey Forward Program — leadership & problem-solving",
-  "💡 Fun fact: My chatbot project exceeded scope so much, it got me my current job!",
-  "☁️ Exploring Terraform + Azure for infrastructure-as-code",
-  "🎓 Final-year BCA student at Osmania University — CGPA 8.5/10",
-  "💼 Currently working as Software Engineer & Data Modeler at Hiffai Tech",
+  "🚀 Auto STTM Engine live in production — Snowflake + Databricks metadata → auto-generated docs",
+  "🩺 Shipped Bronze→Silver→Gold healthcare pipeline: 8 dbt models, 31 tests, GitHub Actions CI",
+  "🧱 Designing enterprise Erwin models across bronze/silver/gold at Hiffai Tech Solutions",
+  "🏆 McKinsey Forward Alumni · Microsoft Azure AZ-900 Certified",
+  "🎓 BCA Graduate, Osmania University · CGPA 8.5/10",
+  "🧠 ANN classifier hit 98.46% on the NSL-KDD intrusion detection benchmark",
+  "💡 Promoted freelance → full-time after shipping a production React + TS app",
 ];
 
 const QuickHighlights = () => {
